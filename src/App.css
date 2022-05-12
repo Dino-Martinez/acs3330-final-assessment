@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
-}
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 {
+  margin-block: .5em;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-weight: bold;
+  font-size: var(--size-5);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+span {
+  font-weight: normal;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.container {
+  width: var(--size-fluid-10);
+  margin: auto;
+}
+.characters {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.data-list {
+  display: grid;
+  width: 100%;
+  padding: var(--size-2);
+  grid-template-columns: auto auto;
+  gap: .5rem;
+  margin-bottom: var(--size-3);
+  border: 1px solid var(--surface-4);
+  background: var(--surface-2);
+  border-radius: var(--radius-3);
 }
